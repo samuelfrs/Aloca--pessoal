@@ -16,7 +16,7 @@ function Navbar() {
   }
 
   return (
-    <div className='shadow-md w-full fixed bg-white'>
+    <div className='shadow-md w-full bg-white'>
       <div className='md:flex items-center justify-between py-6 px-6 md:px-14'>
         <div>
           <img src="logo.svg" alt="Imagem Logo Alocaí" />
