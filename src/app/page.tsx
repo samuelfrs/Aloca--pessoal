@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar/Navbar"
 import Hero from "@/components/Hero"
 import About from "@/components/About"
+import OurClients from "@/components/Sliders/OurClients"
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar/>
       <Hero/>
       <About/>
+      <OurClients/>
     </main>
   )
 }
