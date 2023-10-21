@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 function Navbar() {
   const links = [
