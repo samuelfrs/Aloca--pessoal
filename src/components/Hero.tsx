@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 function Hero() {
   return (
@@ -18,7 +19,7 @@ function Hero() {
       </div>
 
       <div className='w-full md:w-1/3 pr-5 md:pr-20 pt-4 md:pt-16'>
-        <img src="imagebanner.svg" alt="" className="w-full" />
+        <Image src="/imagebanner.svg" alt="Banner" width={600} height={400} />
       </div>
     </main>
   );

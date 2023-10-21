@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface FeatureItemProps {
   title: string;
@@ -24,7 +25,7 @@ const Quality: React.FC = () => {
   return (
     <div className='flex mt-32 px-20 gap-14 items-start'>
       <div>
-        <img src="bgq.svg" alt="" />
+        <Image src="/bgq.svg" alt="" width={641} height={634} />
       </div>
       <div className='pt-10'>
         <h1 className='font-medium text-4xl pr-28 mb-7'>Tudo que você precisa em um só lugar</h1>
