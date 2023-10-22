@@ -27,7 +27,7 @@ const Quality: React.FC = () => {
       <div>
         <Image src="/bgq.svg" alt="" width={641} height={634} />
       </div>
-      <div className='pt-10'>
+      <div className='pt-10 pb-14'>
         <h1 className='font-medium text-4xl pr-28 mb-7'>Tudo que você precisa em um só lugar</h1>
 
         {features.map((feature, index) => (
