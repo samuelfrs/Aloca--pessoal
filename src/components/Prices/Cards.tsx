@@ -11,12 +11,12 @@ interface cardProps {
 
 function Cards({ plan, price, t1, t2, t3 }: cardProps) {
   return (
-    <div className="bg-white shadow-2xl py-4 px-6 sm:px-8 md:w-1/2 lg:w-1/3 xl:w-1/4 mx-auto my-4 sm:mx-4 sm:my-0">
+    <div className="bg-gray-100 shadow-2xl py-4 px-6 sm:px-8 md:w-1/2 lg:w-1/3 xl:w-1/4 mx-auto my-4 sm:mx-4">
       <div className="pt-4">
-        <h1 className="font-medium text-xl sm:text-2xl text-[#100927D9] text-center">
+        <h1 className="font-medium text-xl sm:text-2xl text-[#100927D9]">
           {plan}
         </h1>
-        <span className="font-semibold text-2xl sm:text-3xl text-[#291E6D] text-center">
+        <span className="font-semibold text-2xl sm:text-3xl text-[#291E6D]">
           {price}
         </span>
       </div>

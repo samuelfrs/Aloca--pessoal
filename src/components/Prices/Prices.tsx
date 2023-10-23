@@ -36,8 +36,8 @@ function Prices() {
         />
 
         <Cards
-          plan="Plano Semestral"
-          price="R$ 1350"
+          plan="Plano Anual"
+          price="R$ 2400"
           t1="Lorem ipsum dolor sit"
           t2="Lorem ipsum dolor sit"
           t3="Lorem ipsum dolor sit"
