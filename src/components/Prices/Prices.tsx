@@ -17,7 +17,7 @@ function Prices() {
           Para resolver seus problemas de alocação <br /> de membros e projetos de forma simples:
         </p>
       </div>
-      <div className='md:flex pt-10 px-20 gap-10'>
+      <div className='md:flex justify-center pt-10 gap-10'>
         
         <Cards
           plan="Plano Mensal"
