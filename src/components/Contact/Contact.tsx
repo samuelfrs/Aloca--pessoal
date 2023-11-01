@@ -2,6 +2,8 @@
 
 "use client";
 import React, { useState } from "react";
+import emailjs from '@emailjs/browser';
+
 
 interface ContactProps {
   name: string;
@@ -18,11 +20,23 @@ function Contact() {
 
   const { name, email, message } = formData;
 
-  function sendEmail(e: React.FormEvent) {
-    e.preventDefault();
-
-    console.log("Dados do formulário:", formData);
+  const templateParams = {
+    from_name: name,
+    from_email: email,
+    message: message
   }
+  
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+  
+    emailjs.send(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string, process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string, templateParams, process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string)
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
