@@ -1,9 +1,8 @@
-// https://www.youtube.com/watch?v=GTiuAm6S-OU
-
 "use client";
 import React, { useState } from "react";
-import emailjs from '@emailjs/browser';
-
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 interface ContactProps {
   name: string;
@@ -23,19 +22,34 @@ function Contact() {
   const templateParams = {
     from_name: name,
     from_email: email,
-    message: message
-  }
-  
+    message: message,
+  };
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-  
-    emailjs.send(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string, process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string, templateParams, process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string)
-      .then((result) => {
+
+    emailjs
+      .send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
+        templateParams,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-      }, (error) => {
+          toast.success("E-mail enviado com sucesso!");
+          setFormData({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
           console.log(error.text);
-      });
+          toast.error("Erro ao enviar o e-mail.");
+        }
+      );
   };
 
   const handleChange = (
@@ -105,6 +119,7 @@ function Contact() {
           </form>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 }
