@@ -20,7 +20,7 @@ function FeatureBlock({ imageSrc, title, description }: FeatureBlockProps) {
 
 function About() {
   return (
-    <main className='bg-[#7951F91A] flex flex-col md:flex-row px-5 md:px-20 py-10 md:py-20 gap-10 justify-center'>
+    <main className='bg-[#7951F91A] flex flex-col md:flex-row px-5 md:px-20 py-10 md:py-20 gap-10 justify-center' id='about'>
       <FeatureBlock
         imageSrc="/taskmanagement.svg"
         title="Lorem ipsum dolor amet, consetetur sadipscing"

@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function Hero() {
   return (
-    <main className='flex flex-col-reverse md:flex-row gap-6 pt-16 pb-16'>
+    <main className='flex flex-col-reverse md:flex-row gap-6 pt-16 pb-16' id='hero'>
       <div className='w-full md:w-2/3 pl-5 md:pl-20 pt-10 md:pt-32'>
         <h1 className='font-bold text-2xl md:text-5xl'>
           Organize a carga sobre os membros da sua empresa com eficácia!

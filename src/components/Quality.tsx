@@ -23,17 +23,17 @@ const Quality: React.FC = () => {
   ];
 
   return (
-    <div className='flex mt-32 px-20 gap-14 items-start'>
+    <div className='grid grid-cols-1 md:grid-cols-2 mt-10 md:mt-32 px-4 md:px-20 gap-10 md:gap-14 items-start'>
       <div>
         <Image src="/bgq.svg" alt="" width={641} height={634} />
       </div>
-      <div className='pt-10 pb-14'>
-        <h1 className='font-medium text-4xl pr-28 mb-7'>Tudo que você precisa em um só lugar</h1>
+      <div className='pt-5 md:pt-10 pb-7 md:pb-14'>
+        <h1 className='font-medium text-2xl md:text-4xl pr-4 md:pr-28 mb-4 md:mb-7'>Tudo que você precisa em um só lugar</h1>
 
         {features.map((feature, index) => (
           <FeatureItem key={index} title={feature} />
         ))}
-        <button className='bg-[#7951F9] rounded-xl w-32 md:w-44 h-12 md:h-14 text-white'>
+        <button className='bg-[#7951F9] rounded-xl w-32 md:w-44 h-10 md:h-12 text-white text-sm md:text-base'>
           <a href="#">Comece já</a>
         </button>
       </div>

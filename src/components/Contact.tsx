@@ -63,7 +63,7 @@ function Contact() {
   };
 
   return (
-    <div className="flex justify-center items-center mt-20">
+    <div className="flex justify-center items-center mt-20" id="contact">
       <div className="flex flex-col gap-3 bg-[#7951F930] rounded-xl py-10 px-10">
         <div className="flex flex-col justify-around text-center gap-3 h-fit w-fit">
           <h1 className="font-medium text-4xl sm:text-5xl text-[#291E6D]">

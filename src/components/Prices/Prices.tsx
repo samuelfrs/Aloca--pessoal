@@ -3,7 +3,7 @@ import Cards from './Cards';
 
 function Prices() {
   return (
-    <div className="pt-14">
+    <div className="pt-14" id='prices'>
       <div className="px-4 sm:px-8 lg:px-20 text-center">
         <h1 className="font-medium text-4xl sm:text-5xl">
           Preços{" "}
