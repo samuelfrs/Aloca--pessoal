@@ -9,12 +9,12 @@ interface FeatureBlockProps {
 
 function FeatureBlock({ imageSrc, title, description }: FeatureBlockProps) {
   return (
-    <div className='bg-white rounded-xl py-4 px-4 md:py-6 md:px-6 text-center'>
+    <section className='bg-white rounded-xl py-4 px-4 md:py-6 md:px-6 text-center'>
       <Image src={imageSrc} alt={title} width={128} height={128} />
 
-      <h1 className='font-medium text-lg md:text-2xl pt-2 md:pt-4'>{title}</h1>
+      <h2 className='font-medium text-lg md:text-2xl pt-2 md:pt-4'>{title}</h2>
       <p className='font-normal text-sm md:text-lg pt-2 md:pt-4'>{description}</p>
-    </div>
+    </section>
   );
 }
 

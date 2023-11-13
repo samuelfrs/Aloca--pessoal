@@ -109,13 +109,12 @@ function Contact() {
               required
             />
 
-            <div className="text-center">
+
               <input
-                className="button rounded-xl bg-[#7951F9] w-28 h-11 text-gray-100 mx-auto font-semibold text-xl"
+                className="cursor-pointer text-center rounded-xl bg-[#7951F9] w-28 h-11 text-gray-100 mx-auto font-semibold text-xl"
                 type="submit"
                 value="Enviar"
               />
-            </div>
           </form>
         </div>
       </div>
